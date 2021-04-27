@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>消息队列</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="apple-touch-icon" href="/blog/apple-touch-icon.png">
+    <link rel="icon" href="/blog/favicon.ico">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="mask-icon" href="/blog/icons/icon.svg" color="#ffffff">
+    <meta name="description" content="可能是全网最给力的前端博客">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+    <link rel="preload" href="/blog/assets/css/0.styles.3f022aa2.css" as="style"><link rel="preload" href="/blog/assets/js/app.7fa07907.js" as="script"><link rel="preload" href="/blog/assets/js/2.b6c629b5.js" as="script"><link rel="preload" href="/blog/assets/js/26.8d45691f.js" as="script"><link rel="preload" href="/blog/assets/js/3.589a64d8.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.8e59817e.js"><link rel="prefetch" href="/blog/assets/js/11.34cd2f44.js"><link rel="prefetch" href="/blog/assets/js/12.445d88fd.js"><link rel="prefetch" href="/blog/assets/js/13.e6460b96.js"><link rel="prefetch" href="/blog/assets/js/14.d0ee0fcf.js"><link rel="prefetch" href="/blog/assets/js/15.e91e78ed.js"><link rel="prefetch" href="/blog/assets/js/16.8310de97.js"><link rel="prefetch" href="/blog/assets/js/17.6ca97902.js"><link rel="prefetch" href="/blog/assets/js/18.a82e534b.js"><link rel="prefetch" href="/blog/assets/js/19.e3a914ee.js"><link rel="prefetch" href="/blog/assets/js/20.6db77b80.js"><link rel="prefetch" href="/blog/assets/js/21.e705be23.js"><link rel="prefetch" href="/blog/assets/js/22.efc39414.js"><link rel="prefetch" href="/blog/assets/js/23.5f4c7658.js"><link rel="prefetch" href="/blog/assets/js/24.359a62e4.js"><link rel="prefetch" href="/blog/assets/js/25.c49ef7a9.js"><link rel="prefetch" href="/blog/assets/js/27.364b1802.js"><link rel="prefetch" href="/blog/assets/js/28.485228c0.js"><link rel="prefetch" href="/blog/assets/js/29.0ee8fc42.js"><link rel="prefetch" href="/blog/assets/js/30.465920a7.js"><link rel="prefetch" href="/blog/assets/js/4.1dbf8b08.js"><link rel="prefetch" href="/blog/assets/js/5.9253897f.js"><link rel="prefetch" href="/blog/assets/js/6.4c1f13e3.js"><link rel="prefetch" href="/blog/assets/js/7.bc1839d0.js"><link rel="prefetch" href="/blog/assets/js/8.611f5ec5.js"><link rel="prefetch" href="/blog/assets/js/9.5813bb74.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.3f022aa2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/app.png" alt="卢本伟广场" class="logo"> <span class="site-name can-hide">卢本伟广场</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/dsm/" class="nav-link">
+  歪比歪比
+</a></div><div class="nav-item"><a href="/blog/lbw/" class="nav-link router-link-active">
+  歪比吧卜
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/dsm/" class="nav-link">
+  歪比歪比
+</a></div><div class="nav-item"><a href="/blog/lbw/" class="nav-link router-link-active">
+  歪比吧卜
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/lbw/" aria-current="page" class="sidebar-link">后端技术总结</a></li><li><a href="/blog/lbw/redis.html" class="sidebar-link">Redis</a></li><li><a href="/blog/lbw/mq.html" aria-current="page" class="active sidebar-link">消息队列</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/lbw/mq.html#消息队列是什么" class="sidebar-link">消息队列是什么</a></li><li class="sidebar-sub-header"><a href="/blog/lbw/mq.html#为什么要使用消息队列" class="sidebar-link">为什么要使用消息队列</a></li><li class="sidebar-sub-header"><a href="/blog/lbw/mq.html#消息队列有什么缺点？怎么解决" class="sidebar-link">消息队列有什么缺点？怎么解决</a></li></ul></li><li><a href="/blog/lbw/job.html" class="sidebar-link">XXL-JOB</a></li><li><a href="/blog/lbw/es.html" class="sidebar-link">ElasticSearch</a></li><li><a href="/blog/lbw/concurrent.html" class="sidebar-link">高并发编程</a></li><li><a href="/blog/lbw/ood.html" class="sidebar-link">面向对象编程</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="消息队列"><a href="#消息队列" class="header-anchor">#</a> 消息队列</h1> <h2 id="消息队列是什么"><a href="#消息队列是什么" class="header-anchor">#</a> 消息队列是什么</h2> <p>消息队列是一种队列结构的中间件，能提供异步的服务通信方式，通常被当做存放数据的容器，需要的时候才会将里面的数据取出使用，在分布式系统中，数据【消息】通过消息队列在不同应用之间传输，其中把数据放进队列里的应用被称作生产者，把数据从队列里取出来的应用叫消费者</p> <h2 id="为什么要使用消息队列"><a href="#为什么要使用消息队列" class="header-anchor">#</a> 为什么要使用消息队列</h2> <ul><li><strong>解耦</strong>：上游服务只需把成功的消息放入消息队列，并不关心下游有多少服务依赖，下游只负责订阅监听成功的消息</li> <li><strong>异步</strong>：将非必要的串行或者并行的下游服务逻辑放入消息队列异步运行，在防止高流量把数据库和缓存搞崩的同时加快接口响应速度</li> <li><strong>削峰</strong>：为了防止流量过大导致服务挂掉，把请求放进消息队列，根据服务器处理能力来决定消费多少请求</li></ul> <h2 id="消息队列有什么缺点？怎么解决"><a href="#消息队列有什么缺点？怎么解决" class="header-anchor">#</a> 消息队列有什么缺点？怎么解决</h2> <ul><li><strong>重复消费</strong> <ul><li>描述：由于消息队列的重试机制，下游服务只要出现异常就会让上游接口重新发送一次消息，比如：上游下单系统下单成功后，下游发卷系统出现异常，会让下单系统再次发送下单成功的消息，导致其他没报异常的下游服务重复消费这个下单成功的消息</li> <li>解决：消费消息时确保接口的幂等性，无论执行多少次都要其返回结果都一样</li></ul></li> <li><strong>顺序消费</strong> <ul><li>描述：多个消息在被多个消费者消费时，会出现消息没有按照期望顺序消费，从而产生脏数据</li> <li>解决：生产者根据hash把消息发送到同一个队列中，每个队列对应一个消费者</li></ul></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">4/27/2021, 5:50:04 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/lbw/redis.html" class="prev">
+        Redis
+      </a></span> <span class="next"><a href="/blog/lbw/job.html">
+        XXL-JOB
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><BackToTop></BackToTop><!----><Live2D></Live2D></div></div>
+    <script src="/blog/assets/js/app.7fa07907.js" defer></script><script src="/blog/assets/js/2.b6c629b5.js" defer></script><script src="/blog/assets/js/26.8d45691f.js" defer></script><script src="/blog/assets/js/3.589a64d8.js" defer></script>
+  </body>
+</html>
